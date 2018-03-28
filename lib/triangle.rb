@@ -19,16 +19,6 @@ class Triangle
     end
   end
 
-  def valid_triangle
-  sides = [@side1, @side2, @side1]
-  raise TriangleError if sides.any? { |side| side == 0 }
-
-  sides.inject(:+) - sides.max > sides.max ? true : false
-  end
-
-
-
   class TriangleError < StandardError
-
   end
 end

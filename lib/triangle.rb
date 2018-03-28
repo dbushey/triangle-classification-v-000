@@ -4,7 +4,7 @@ class Triangle
     @side1 = side1
     @side2 = side2
     @side3 = side3
-    if @side1 == 0 && @side2 == 0 && @side 3== 0
+    if @side1 == 0 && @side2 == 0 && @side 3 == 0
       raise TriangleError
     end
   end
@@ -21,4 +21,5 @@ class Triangle
 
   class TriangleError < StandardError
   end
+
 end

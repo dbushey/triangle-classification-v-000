@@ -24,7 +24,7 @@ class Triangle
   sides.inject(:+) - sides.max > sides.max ? true : false
   end
 
-  #valid_triangle
+
 
   class TriangleError < StandardError
 
